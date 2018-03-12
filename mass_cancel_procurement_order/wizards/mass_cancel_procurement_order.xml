@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="mass_cancel_procurement_order_form" model="ir.ui.view">
+            <field name="name">mass.cancel.procurement.order.form</field>
+            <field name="model">mass.cancel.procurement.order</field>
+            <field name="arch" type="xml">
+                <form>
+                    <separator colspan="4" string="Confirm cancel"/>
+                    <span>Press Confirm to cancel the Procurement Orders selected.</span>
+                    <footer>
+                        <button name="cancel" string="Confirm" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mass_cancel_procurement_order_submenu" model="ir.actions.act_window">
+            <field name="name">Cancel Exception POs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mass.cancel.procurement.order</field>
+            <field name="src_model">procurement.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mass_cancel_procurement_order_form"/>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+
+        <record id="mass_cancel_procurement_order_action" model="ir.values">
+            <field name="model_id" ref="procurement.model_procurement_order"/>
+            <field name="name">mass.cancel.procurement.order</field>
+            <field name="key2">client_action_multi</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('mass_cancel_procurement_order_submenu'))"/>
+            <field name="key">action</field>
+            <field name="model">procurement.order</field>
+        </record>
+    </data>
+</openerp>
