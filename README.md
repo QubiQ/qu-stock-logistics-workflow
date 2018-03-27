@@ -1,5 +1,4 @@
 # qu-stock-logistics-workflow Qubiq Odoo v.10
-=============================
 QubiQ addons for stock logisitics
 
 [//]: # (addons)
