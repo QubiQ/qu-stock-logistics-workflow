@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* adjust_inventary_extension_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20180303\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-17 18:27+0000\n"
+"PO-Revision-Date: 2018-04-17 20:29+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.7.4\n"
+
+#. module: adjust_inventary_extension_cost
+#: model:ir.model,name:adjust_inventary_extension_cost.model_stock_inventory
+msgid "Inventory"
+msgstr "Inventario"
+
+#. module: adjust_inventary_extension_cost
+#: model:ir.model,name:adjust_inventary_extension_cost.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "Línea inventario"
+
+#. module: adjust_inventary_extension_cost
+#: model:ir.model,name:adjust_inventary_extension_cost.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: adjust_inventary_extension_cost
+#: code:addons/adjust_inventary_extension_cost/models/stock_inventory_line.py:13
+#: model:ir.model.fields,field_description:adjust_inventary_extension_cost.field_stock_inventory_line_cost
+#, python-format
+msgid "Unit Cost"
+msgstr "Coste unitario"
+
+#. module: adjust_inventary_extension_cost
+#: code:addons/adjust_inventary_extension_cost/models/stock_move.py:13
+#: model:ir.model.fields,field_description:adjust_inventary_extension_cost.field_stock_move_inventory_line
+#, python-format
+msgid "inventory line"
+msgstr "línea de inventario"
