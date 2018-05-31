@@ -8,6 +8,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[export_stock_on_transfer](export_stock_on_transfer/) | 8.0.1.0.0 | Create a job to export directly the stock to the ecommerce when transfering a picking.
 [inventory_exhausted_products](inventory_exhausted_products/) | 8.0.1.0.0 | Possibility to add exhausted products to new inventories
 [mass_cancel_procurement_order](mass_cancel_procurement_order/) | 8.0.1.0.0 | Cancel procurement orders massively
 [multiple_stock_picking_copies](multiple_stock_picking_copies/) | 8.0.1.0.0 | Print stock picking report a defined number of times at once
