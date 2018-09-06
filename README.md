@@ -7,4 +7,4 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[stock_picking_valued](stock_picking_valued/) | 11.0.1.0.0 | Get the value of the picking
+[stock_picking_valued](stock_picking_valued/) | 11.0.2.0.0 | Get the value of the picking
