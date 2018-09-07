@@ -1,0 +1,152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_picking_valued
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-07 06:17+0000\n"
+"PO-Revision-Date: 2018-09-07 06:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_percent_margin
+msgid "% margin"
+msgstr "% margen"
+
+#. module: stock_picking_valued
+#: model:ir.ui.view,arch_db:stock_picking_valued.report_picking_valued
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: stock_picking_valued
+#: model:ir.ui.view,arch_db:stock_picking_valued.report_picking_valued
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_cost_subtotal
+msgid "Cost subtotal"
+msgstr "Coste subtotal"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_external_note
+msgid "External Notes"
+msgstr "Notas externas"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,help:stock_picking_valued.field_res_partner_valued_picking
+#: model:ir.model.fields,help:stock_picking_valued.field_res_users_valued_picking
+#: model:ir.model.fields,help:stock_picking_valued.field_stock_picking_valued_picking
+msgid "If checked It will print valued picks for this customer"
+msgstr "Si está marcado, mostrará el albarán valorado para este cliente"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,help:stock_picking_valued.field_purchase_order_valued_picking
+#: model:ir.model.fields,help:stock_picking_valued.field_sale_order_valued_picking
+msgid "If it sets to True, the picking will                                     be valued"
+msgstr "Si está marcado, el albarán estará                                     valorado"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_margin
+msgid "Margin"
+msgstr "Margen"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_stock_move_line
+msgid "Packing Operation"
+msgstr "Operación de empaquetado"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_order_price_unit
+msgid "Price unit"
+msgstr "Precio unitario"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_res_partner_valued_picking
+#: model:ir.model.fields,field_description:stock_picking_valued.field_res_users_valued_picking
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_valued_picking
+msgid "Print valued picking"
+msgstr "Imprimir albarán valorado"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_sale_order
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de Stock"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_line_price_subtotal
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_price_subtotal
+#: model:ir.ui.view,arch_db:stock_picking_valued.report_picking_valued
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_move_tax_id
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_amount_tax
+#: model:ir.ui.view,arch_db:stock_picking_valued.report_picking_valued
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: stock_picking_valued
+#: model:ir.model,name:stock_picking_valued.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: stock_picking_valued
+#: model:ir.ui.view,arch_db:stock_picking_valued.report_picking_valued
+msgid "Unit Price"
+msgstr "Precio Unitario"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_amount_untaxed
+msgid "Untaxed Amount"
+msgstr "Base imponible"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_purchase_order_valued_picking
+#: model:ir.model.fields,field_description:stock_picking_valued.field_sale_order_valued_picking
+msgid "Valued picking"
+msgstr "Albarán valorado"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_amount_discounted
+msgid "amount discounted"
+msgstr "Cantidad descuento"
+
+#. module: stock_picking_valued
+#: model:ir.model.fields,field_description:stock_picking_valued.field_stock_picking_amount_gross
+msgid "amount gross"
+msgstr "Cantidad bruta"
+
