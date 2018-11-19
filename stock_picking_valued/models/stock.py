@@ -3,6 +3,7 @@
 
 from odoo import models, fields, api
 import odoo.addons.decimal_precision as dp
+import logging
 
 
 class stock_picking(models.Model):
@@ -52,27 +53,31 @@ class stock_picking(models.Model):
     )
     currency_id = fields.Many2one(
         'res.currency',
-        compute='_amount_all',
+        compute='_get_currency',
         string="Currency",
         readonly=True,
         store=True,
     )
 
     @api.multi
-    @api.depends('move_lines', 'partner_id')
-    def _amount_all(self):
+    @api.depends('sale_id', 'purchase_id')
+    def _get_currency(self):
         for picking in self:
             sale_id = picking.sale_id
             purchase_id = picking.purchase_id
-            taxes = amount_gross = amount_untaxed = 0.0
-            cur = picking.partner_id.property_product_pricelist \
-                and picking.partner_id.property_product_pricelist.currency_id \
-                or False
             if sale_id:
                 picking.currency_id = sale_id.pricelist_id.currency_id
             elif purchase_id:
                 picking.currency_id = purchase_id.currency_id
 
+    @api.multi
+    @api.depends('move_lines', 'partner_id')
+    def _amount_all(self):
+        for picking in self:
+            taxes = amount_gross = amount_untaxed = 0.0
+            cur = picking.partner_id.property_product_pricelist \
+                and picking.partner_id.property_product_pricelist.currency_id \
+                or False
             for line in picking.move_lines:
                 price_unit = 0.0
                 order_line = False

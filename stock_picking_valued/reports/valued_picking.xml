@@ -2,52 +2,28 @@
 <odoo>
     <template id="report_picking_valued" name="Stock_picking" inherit_id="stock.report_picking">
         <xpath expr="//table[@t-if='o.move_line_ids']/thead/tr/th[2]" position="after">
-            <th>Unit Price</th>
-            <th>Taxes</th>
-            <th>Subtotal</th>
+            <t t-if="o.valued_picking">
+                <th>Unit Price</th>
+                <th>Taxes</th>
+                <th>Subtotal</th>
+            </t>
         </xpath>
         <xpath expr="//table[@t-if='o.move_line_ids']/tbody/tr/td[2]" position="after">
-            <td>
-                <span t-field="move.order_price_unit"/>
-            </td>
-            <td class="text-right">
-                <span t-esc="', '.join(map(lambda x: (x.description or x.name), move.tax_id))"/>
-            </td>
-            <td>
-                <span t-field="move.price_subtotal"/>
-            </td>
+            <t t-if="o.valued_picking">
+                <td>
+                    <span t-field="move.order_price_unit"/>
+                </td>
+                <td class="text-right">
+                    <span t-esc="', '.join(map(lambda x: (x.description or x.name), move.tax_id))"/>
+                </td>
+                <td>
+                    <span t-field="move.price_subtotal"/>
+                </td>
+            </t>
         </xpath>
 
         <xpath expr="//table[@t-if='o.move_line_ids']" position="after">
-            <!--
-            <div class="clearfix">
-                <div class="row pull-right" name="total">
-                    <div>
-                        <table class="table-condensed">
-                            <tr>
-                                <td><strong>Subtotal</strong></td>
-                                <td class="text-right">
-                                    <span t-field="o.amount_untaxed"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Impuestos</strong></td>
-                                <td class="text-right">
-                                    <span t-field="o.amount_tax"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Total</strong></td>
-                                <td class="text-right">
-                                    <span t-field="o.amount_total"/>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            -->
-            <div class="clearfix">
+            <div class="clearfix" t-if="o.valued_picking">
                 <div class="row pull-right" name="total">
                     <div>
                         <table class="table-condensed" style="min-width: 200px;max-width: 350px;">
