@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_view_price_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-11 08:30+0000\n"
+"PO-Revision-Date: 2019-04-11 10:34+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+
+#. module: stock_view_price_history
+#: code:addons/stock_view_price_history/models/product_price_history.py:11
+#: model:ir.model.fields,field_description:stock_view_price_history.field_product_price_history_actual_cost
+#, python-format
+msgid "Actual Cost"
+msgstr "Coste actual"
+
+#. module: stock_view_price_history
+#: model:ir.model.fields,help:stock_view_price_history.field_product_price_history_actual_cost
+msgid ""
+"Cost used for stock valuation in standard price and as a first price to set "
+"in average/fifo. Also used as a base price for pricelists. Expressed in the "
+"default unit of measure of the product."
+msgstr ""
+"Coste utilizado para la valoración de stocks en el precio estándar y como "
+"primer precio a fijar en promedio/fifo. También se utiliza como precio base "
+"para las listas de precios. Se expresa en la unidad de medida "
+"predeterminada del producto."
+
+#. module: stock_view_price_history
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_tree_view
+msgid "Date of change"
+msgstr "Fecha de cambio"
+
+#. module: stock_view_price_history
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_tree_view
+msgid "Previous Cost"
+msgstr "Coste previo"
+
+#. module: stock_view_price_history
+#: model:ir.ui.menu,name:stock_view_price_history.menu_stock_cost_history
+msgid "Product Cost History"
+msgstr "Historial de costes de productos"
+
+#. module: stock_view_price_history
+#: code:addons/stock_view_price_history/models/product_price_history.py:17
+#: model:ir.model.fields,field_description:stock_view_price_history.field_product_price_history_name_product
+#, python-format
+msgid "Product Name"
+msgstr "Nombre del producto"
+
+#. module: stock_view_price_history
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_search_view
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_tree_view
+msgid "Product Price History"
+msgstr "Historial de precios de productos"
+
+#. module: stock_view_price_history
+#: model:ir.actions.act_window,name:stock_view_price_history.action_stock_cost_history
+msgid "Stock Cost History"
+msgstr "Historial de costes de stock"
+
+#. module: stock_view_price_history
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_search_view
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: stock_view_price_history
+#: model:ir.ui.view,arch_db:stock_view_price_history.stock_history_cost_search_view
+msgid "Today"
+msgstr "Hoy "
+
+#. module: stock_view_price_history
+#: model:ir.model,name:stock_view_price_history.model_product_price_history
+msgid "product.price.history"
+msgstr "product.price.history"
