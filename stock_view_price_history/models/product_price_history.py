@@ -1,21 +1,21 @@
-# Copyright 2019 Joan Segui <joan.segui@qubiq.es>
+# Copyright 2019 Xavier Piernas <xavier.piernas@qubiq.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models, _
+from odoo import fields, models, api, _
 
 
 class ProductPriceHistory(models.Model):
-    _inherit = "product.price.history"
+    _inherit = 'product.price.history'
 
-    actual_cost = fields.Float(
-        string=_('Actual Cost'),
-        related='product_id.standard_price',
-        store=True,
-        readonly=True
+    previous_cost = fields.Float(
+        string=_('Previous Cost'),
+        default=0.0
     )
-    name_product = fields.Char(
-        string=_('Product Name'),
-        related='product_id.name',
-        store=True,
-        readonly=True
-    )
+
+    @api.model
+    def create(self, vals):
+        product_id = self.env['product.product'].browse(vals['product_id'])
+        if product_id.standard_price != product_id.previous_cost:
+            if product_id:
+                vals['previous_cost'] = product_id.previous_cost
+            return super(ProductPriceHistory, self).create(vals)

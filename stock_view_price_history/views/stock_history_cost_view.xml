@@ -9,9 +9,9 @@
 		<field name="arch" type="xml">
 			<tree string="Product Price History">
 				<field name="datetime" string="Date of change"/>
-				<field name="cost" string="Previous Cost"/>
-				<field name="actual_cost"/>
-				<field name="name_product"/>
+				<field name="cost" string="Current Cost"/>
+				<field name="previous_cost"/>
+				<field name="product_id"/>
 			</tree>
 		</field>
 	</record>
@@ -21,7 +21,7 @@
 		<field name="model">product.price.history</field>
 		<field name="arch" type="xml">
 			<search string="Product Price History">
-                <field name="name_product"/>
+                <field name="product_id"/>
                 <filter name="datetime" string="Today"  
                 	domain="[
 	                    ('datetime', '>=', context_today().strftime('%Y-%m-%d')),

@@ -56,7 +56,8 @@ Contributors
 ~~~~~~~~~~~~
 
 * Joan Segui <joan.segui@qubiq.es>
-* Valentin Viangre <valentin.vinagre@qubiq.es> 
+* Valentin Viangre <valentin.vinagre@qubiq.es>
+* Xavier Piernas <xavier.piernas@qubiq.es>
 
 
 Maintainer
